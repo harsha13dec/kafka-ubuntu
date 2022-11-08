@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageAccountName": {
+      "value": "PROJECT_KAFKA"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "admin@123"
+    },
+    "virtualNetworkName": {
+      "value": "GEN-VNET-NAME"
+    },
+    "subnetName": {
+      "value": "GEN-SUBNET1-NAME"
+    },
+    "addressPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "subnetPrefix": {
+      "value": "10.0.0.0/24"
+    },
+    "kafkaVersion": {
+      "value": "0.8.2.1"
+    },
+    "kafkaNodeIPAddressPrefix": {
+      "value": "10.0.0.1"
+    },
+    "kafkaZooNodeIPAddressPrefix": {
+      "value": "10.0.0.4"
+    },
+    "jumpbox": {
+      "value": "enabled"
+    },
+    "tshirtSize": {
+      "value": "S"
+    }
+  }
+}
