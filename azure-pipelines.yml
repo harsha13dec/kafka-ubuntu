@@ -6,19 +6,18 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: Default
 
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial (46e0c16e-b3a4-4d53-a89e-0ad6f8b48943)'
+    azureResourceManagerConnection: 'Free Trial(46e0c16e-b3a4-4d53-a89e-0ad6f8b48943)'
     subscriptionId: '46e0c16e-b3a4-4d53-a89e-0ad6f8b48943'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'kafka-ubuntu'
+    resourceGroupName: 'ubuntu-azure-kafka'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/shared-resources.json'
-    csmParametersFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/application-workloads/kafka/kafka-on-ubuntu/jumpbox-resources-enabled.json'
+    csmFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.json'
+    csmParametersFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
