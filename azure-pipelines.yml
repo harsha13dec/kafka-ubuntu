@@ -10,18 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial (46e0c16e-b3a4-4d53-a89e-0ad6f8b48943)'
-    subscriptionId: '46e0c16e-b3a4-4d53-a89e-0ad6f8b48943'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'ubuntu-azure-kafka'
-    location: 'East US'
-    templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.json'
-    csmParametersFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.parameters.json'
-    deploymentMode: 'Incremental'
+
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
