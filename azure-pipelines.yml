@@ -17,7 +17,7 @@ steps:
     subscriptionId: '46e0c16e-b3a4-4d53-a89e-0ad6f8b48943'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'kafka-ubuntu'
-    location: 'East US'
+    location: ' Jio India central'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/harsha13dec/kafka-ubuntu/main/azuredeploy.parameters.json'
