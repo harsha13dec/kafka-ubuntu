@@ -276,8 +276,7 @@
           {
             "name": "ipconfig1",
             "properties": {
-              "privateIPAllocationMethod": "Static",
-              "publicIPAllocationMethod": "Dynamic"
+              "privateIPAllocationMethod": "Static"
               "privateIPAddress": "[concat(parameters('kafkaNodeIPAddressPrefix'), copyindex())]",
               "subnet": {
                 "id": "[variables('subnetRef')]"
