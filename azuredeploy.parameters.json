@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccountName": {
-      "value": "PROJECT_KAFKA"
+      "value": "project123456"
     },
     "adminUsername": {
       "value": "azureuser"
@@ -12,7 +12,7 @@
       "value": "admin@123"
     },
     "virtualNetworkName": {
-      "value": "GEN-VNET-NAME"
+      "value": "kafka-vnet"
     },
     "subnetName": {
       "value": "GEN-SUBNET1-NAME"
@@ -33,7 +33,7 @@
       "value": "10.0.0.4"
     },
     "jumpbox": {
-      "value": "enabled"
+      "value": "disabled"
     },
     "tshirtSize": {
       "value": "S"
